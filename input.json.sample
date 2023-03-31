@@ -1,0 +1,36 @@
+{
+    "PageName":"/*ページ名*/",
+    "SheetId":"/*スプレッドシートID*/",
+    "Timeframe":"night /* midnight/morning/afternoon/night */",
+    "IsSelenium" : false,
+    "Format":{
+        "URL":"/*URL*/",
+        "Main":{
+            "IdentifyMethod":"Class /*Class/Id/Tag/特殊パターン*/",
+            "Class":"ClassName /*IdentifyMethodで選んだもの*/",
+            "Num":0
+        },
+        "Items":{
+            "IdentifyMethod":"",
+            "Class":""
+        },
+        "Features":[
+            {
+                "FeatureName":"Title",
+                "IdentifyMethod":"Class /*Class/Id/Tag/特殊パターン*/",
+                "Class":["ClassName1","ClassName2","/*複数あるときはこういう書き方もOK*/"],
+                "Num":0,
+
+                "ShapingFunction":"default /*何もないならdefault*/"
+            },
+            {
+                "FeatureName":"Favs",
+                "IdentifyMethod":"Id",
+                "Id":"ClassName_Favs",
+                "Num":0,
+
+                "ShapingFunction":"default /*default以外の場合該当関数を作成する必要あり*/"
+            }
+        ]
+    }
+}
