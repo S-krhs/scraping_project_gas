@@ -49,7 +49,7 @@ const getFormats = () => {
 
 // スクレイピングデータを格納するスプレッドシートを取得
 const getSheet = (sheetId) => {
-  const sheet = SpreadsheetApp.openById(sheetId).getSheets()[0];
+  const sheet = SpreadsheetApp.openById(sheetId);
   return sheet;
 }
 
