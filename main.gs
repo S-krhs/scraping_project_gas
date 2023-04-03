@@ -13,7 +13,7 @@ const getTimeframe = () => {
   }else if(hours < 12){
     res = "morning";
   }else if(hours < 18){
-    res= "aftenoon";
+    res= "afternoon";
   }else{
     res = "night";
   }
